@@ -1,6 +1,6 @@
 steps:
 - env
-- find / -type f -name python3.7 2>/dev/null
+- find / -type f -name python3.7 2>/dev/null || true
 - /home/docs/.pyenv/shims/python3.7 -m virtualenv .venv
 - ls -la .venv/bin
 - .venv/bin/python -m ensurepip
