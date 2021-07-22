@@ -1,4 +1,5 @@
 steps:
-- python -m venv .venv
+- env
+- python3.7 -m venv .venv
 - .venv/bin/pip install ./pydoc-markdown
 - ./venv/bin/pydoc-markdown --build --site-dir $SITE_DIR -vv
