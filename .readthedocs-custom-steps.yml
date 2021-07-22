@@ -1,7 +1,6 @@
 steps:
 - env
-- ls -la /usr/bin
-- ls -la /usr/sbin
+- find / -name python3.7
 - /usr/bin/python3.7 -m virtualenv .venv
 - ls -la .venv/bin
 - .venv/bin/python -m ensurepip
