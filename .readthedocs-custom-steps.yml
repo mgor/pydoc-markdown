@@ -1,6 +1,8 @@
 steps:
 - env
-- python3.7 -m virtualenv .venv
+- ls -la /usr/bin
+- ls -la /usr/sbin
+- /usr/bin/python3.7 -m virtualenv .venv
 - ls -la .venv/bin
 - .venv/bin/python -m ensurepip
 - .venv/bin/python -m pip install ./pydoc-markdown
